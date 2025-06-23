@@ -30,7 +30,9 @@ class App {
   }
 
   private initRoutes(): void {
-
+    this.app.get('/coffee', (_req, res) => {
+      res.status(418).end()
+    })
   }
 
   private initMiddlewares(): void {
