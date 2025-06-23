@@ -4,6 +4,9 @@
   "description": "back end do projeto parte diaria",
   "main": "index.js",
   "scripts": {
+    "start": "tsnd src/server.ts",
+    "dev": "tsnd src/server.ts",
+    "build": "npx -y tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucas Alves",
@@ -13,6 +16,7 @@
     "dotenv": "^16.5.0",
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
+    "mysql2": "^3.14.1",
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
